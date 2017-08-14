@@ -67,6 +67,7 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
         print(accessory.name)
         
         if let room = homeManager.primaryHome?.rooms.first as HMRoom? {
+            print("Trying to assign")
             homeManager.primaryHome?.addAccessory(accessory, completionHandler: { (error) in
                 if error != nil {
                     print("We have an error \(error)")
@@ -147,7 +148,4 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
