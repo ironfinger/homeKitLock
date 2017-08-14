@@ -101,6 +101,7 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
             }
             index = index + 1
         }
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
