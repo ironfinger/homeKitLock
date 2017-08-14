@@ -8,22 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		E3485D1F1F419368002CBDB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3485D1E1F419368002CBDB6 /* AppDelegate.swift */; };
-		E3485D211F419368002CBDB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3485D201F419368002CBDB6 /* ViewController.swift */; };
+		E3485D211F419368002CBDB6 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3485D201F419368002CBDB6 /* DiscoveryViewController.swift */; };
 		E3485D241F419368002CBDB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3485D221F419368002CBDB6 /* Main.storyboard */; };
 		E3485D271F419368002CBDB6 /* homeKitLock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3485D251F419368002CBDB6 /* homeKitLock.xcdatamodeld */; };
 		E3485D291F419368002CBDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3485D281F419368002CBDB6 /* Assets.xcassets */; };
 		E3485D2C1F419368002CBDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3485D2A1F419368002CBDB6 /* LaunchScreen.storyboard */; };
+		E3485D361F419564002CBDB6 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3485D351F419564002CBDB6 /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3485D1B1F419368002CBDB6 /* homeKitLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeKitLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3485D1E1F419368002CBDB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3485D201F419368002CBDB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3485D201F419368002CBDB6 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		E3485D231F419368002CBDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3485D261F419368002CBDB6 /* homeKitLock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homeKitLock.xcdatamodel; sourceTree = "<group>"; };
 		E3485D281F419368002CBDB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3485D2B1F419368002CBDB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3485D2D1F419368002CBDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3485D331F419564002CBDB6 /* homeKitLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = homeKitLock.entitlements; sourceTree = "<group>"; };
+		E3485D351F419564002CBDB6 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3485D361F419564002CBDB6 /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				E3485D1D1F419368002CBDB6 /* homeKitLock */,
 				E3485D1C1F419368002CBDB6 /* Products */,
+				E3485D341F419564002CBDB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +61,9 @@
 		E3485D1D1F419368002CBDB6 /* homeKitLock */ = {
 			isa = PBXGroup;
 			children = (
+				E3485D331F419564002CBDB6 /* homeKitLock.entitlements */,
 				E3485D1E1F419368002CBDB6 /* AppDelegate.swift */,
-				E3485D201F419368002CBDB6 /* ViewController.swift */,
+				E3485D201F419368002CBDB6 /* DiscoveryViewController.swift */,
 				E3485D221F419368002CBDB6 /* Main.storyboard */,
 				E3485D281F419368002CBDB6 /* Assets.xcassets */,
 				E3485D2A1F419368002CBDB6 /* LaunchScreen.storyboard */,
@@ -65,6 +71,14 @@
 				E3485D251F419368002CBDB6 /* homeKitLock.xcdatamodeld */,
 			);
 			path = homeKitLock;
+			sourceTree = "<group>";
+		};
+		E3485D341F419564002CBDB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3485D351F419564002CBDB6 /* HomeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +113,11 @@
 				TargetAttributes = {
 					E3485D1A1F419368002CBDB6 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3485D211F419368002CBDB6 /* ViewController.swift in Sources */,
+				E3485D211F419368002CBDB6 /* DiscoveryViewController.swift in Sources */,
 				E3485D271F419368002CBDB6 /* homeKitLock.xcdatamodeld in Sources */,
 				E3485D1F1F419368002CBDB6 /* AppDelegate.swift in Sources */,
 			);
@@ -277,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeKitLock/homeKitLock.entitlements;
 				DEVELOPMENT_TEAM = 93HE2GWDEW;
 				INFOPLIST_FILE = homeKitLock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -291,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = homeKitLock/homeKitLock.entitlements;
 				DEVELOPMENT_TEAM = 93HE2GWDEW;
 				INFOPLIST_FILE = homeKitLock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
