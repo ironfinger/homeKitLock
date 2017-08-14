@@ -82,7 +82,7 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
             })
             print("Accessory assigned")
         }else{
-            self.homeManager.addHome(withName: "Ivel Home", completionHandler: { (home, error) in
+            self.homeManager.addHome(withName: "ANewHome", completionHandler: { (home, error) in
                 if error != nil {
                     print(error)
                 }else{
