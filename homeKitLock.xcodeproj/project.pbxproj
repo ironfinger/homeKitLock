@@ -14,6 +14,7 @@
 		E3485D291F419368002CBDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3485D281F419368002CBDB6 /* Assets.xcassets */; };
 		E3485D2C1F419368002CBDB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3485D2A1F419368002CBDB6 /* LaunchScreen.storyboard */; };
 		E3485D361F419564002CBDB6 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3485D351F419564002CBDB6 /* HomeKit.framework */; };
+		E3485D381F41D36D002CBDB6 /* MyAccessoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3485D371F41D36D002CBDB6 /* MyAccessoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E3485D2D1F419368002CBDB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3485D331F419564002CBDB6 /* homeKitLock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = homeKitLock.entitlements; sourceTree = "<group>"; };
 		E3485D351F419564002CBDB6 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		E3485D371F41D36D002CBDB6 /* MyAccessoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccessoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E3485D331F419564002CBDB6 /* homeKitLock.entitlements */,
 				E3485D1E1F419368002CBDB6 /* AppDelegate.swift */,
 				E3485D201F419368002CBDB6 /* DiscoveryViewController.swift */,
+				E3485D371F41D36D002CBDB6 /* MyAccessoriesViewController.swift */,
 				E3485D221F419368002CBDB6 /* Main.storyboard */,
 				E3485D281F419368002CBDB6 /* Assets.xcassets */,
 				E3485D2A1F419368002CBDB6 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 				E3485D211F419368002CBDB6 /* DiscoveryViewController.swift in Sources */,
 				E3485D271F419368002CBDB6 /* homeKitLock.xcdatamodeld in Sources */,
 				E3485D1F1F419368002CBDB6 /* AppDelegate.swift in Sources */,
+				E3485D381F41D36D002CBDB6 /* MyAccessoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

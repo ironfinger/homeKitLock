@@ -35,7 +35,6 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
         // Start the device search process.
         browser.startSearchingForNewAccessories()
         
-        
         // Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
             // print(timer)
         // }
@@ -76,7 +75,7 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
                         if error != nil {
                             print("We have an error with assigning the accessory to a room: \(error)")
                         }else{
-                            print("accessory assigned")
+                            print("accessory assigned to \(room.name)")
                         }
                     })
                 }
