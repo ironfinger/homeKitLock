@@ -81,6 +81,45 @@ class DiscoveryViewController: UIViewController, UITableViewDataSource, UITableV
                 }
             })
             print("Accessory assigned")
+        }else{
+            self.homeManager.addHome(withName: "Ivel Home", completionHandler: { (home, error) in
+                if error != nil {
+                    print(error)
+                }else{
+                    if let newHome = home {
+                        newHome.addRoom(withName: "Office", completionHandler: { (room, error) in
+                            if error != nil {
+                                print("We couldn't create a room: \(error)")
+                            }else{
+                                
+                            }
+                        })
+                        
+                        // Assign this home as the primary home.
+                        self.homeManager.updatePrimaryHome(newHome, completionHandler: { (error) in
+                            if error != nil {
+                                print(error)
+                            }
+                        })
+                    }
+                }
+            })
+            
+            if let room = homeManager.primaryHome?.rooms.first as HMRoom? {
+                homeManager.primaryHome?.addAccessory(accessory, completionHandler: { (error) in
+                    if error != nil {
+                        print("We have an error \(error)")
+                    }else{
+                        self.homeManager.primaryHome?.assignAccessory(accessory, to: room, completionHandler: { (error) in
+                            if error != nil {
+                                print("We have an error with assigning the accessory to a room: \(error)")
+                            }else{
+                                print("accessory assigned")
+                            }
+                        })
+                    }
+                })
+            }
         }
     }
     

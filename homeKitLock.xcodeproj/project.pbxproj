@@ -299,6 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = homeKitLock/homeKitLock.entitlements;
 				DEVELOPMENT_TEAM = 93HE2GWDEW;
 				INFOPLIST_FILE = homeKitLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tom.homeKitLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +315,7 @@
 				CODE_SIGN_ENTITLEMENTS = homeKitLock/homeKitLock.entitlements;
 				DEVELOPMENT_TEAM = 93HE2GWDEW;
 				INFOPLIST_FILE = homeKitLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tom.homeKitLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
